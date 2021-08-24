@@ -1,7 +1,7 @@
 //tablas de multiplicar
 const fs = require('fs');
 console.clear();
-const crearArchivo = ( base = 1 )=>{
+const crearArchivo = ( base )=>{
     return new Promise((resolve, reject)=>{
         let resultado = '';
         for(let i=1;i<=10;i++){

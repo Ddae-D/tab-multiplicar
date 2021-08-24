@@ -1,0 +1,32 @@
+{
+  "name": "tab-multiplicar",
+  "version": "0.0.1",
+  "description": "bases de nodejs-Tabla de multiplicar simple con fs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tabla": "node app --base=1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ddae-D/tab-multiplicar.git"
+  },
+  "keywords": [
+    "promesas",
+    "tablas",
+    "multiplicar"
+  ],
+  "author": "sargento Ddae-D",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ddae-D/tab-multiplicar/issues"
+  },
+  "homepage": "https://github.com/Ddae-D/tab-multiplicar#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
