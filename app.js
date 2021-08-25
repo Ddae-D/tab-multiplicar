@@ -15,11 +15,10 @@ const argv = require('yargs')
         .option('l',{
             alias:'listar',
             type:boolean,
-            demandOption:false
+            demandOption:false,  
         })
         .argv;
 
 
 crearArchivo(argv.base, argv.listar)
-.then(file=>console.log(file,'creado'))
-.catch(error=>console.log(error));
+.then(file=>console.log(file,'creado con exito')).catch(error=>console.log(error));
