@@ -1,4 +1,4 @@
-const { number } = require('yargs');
+const { number, boolean } = require('yargs');
 const {crearArchivo} = require('./helpers/multiplicar');
 const argv = require('yargs')
     .option('b',{
@@ -11,8 +11,15 @@ const argv = require('yargs')
                 throw 'Base no numerica'
             }
             return true;
-        }).argv;
-        
-crearArchivo(argv.base)
+        })
+        .option('l',{
+            alias:'listar',
+            type:boolean,
+            demandOption:false
+        })
+        .argv;
+
+
+crearArchivo(argv.base, argv.listar)
 .then(file=>console.log(file,'creado'))
 .catch(error=>console.log(error));
